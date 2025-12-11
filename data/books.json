@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "El Principito",
+    "author": "a1",
+    "publisher": "p1",
+    "year": 1943
+  },
+  {
+    "id": "2",
+    "title": "Cien años de soledad",
+    "author": "a2",
+    "publisher": "p2",
+    "year": 1967
+  },
+  {
+    "id": "8cd6c71f-8273-4d88-a7d6-3c85423a7719",
+    "title": "Harry Potter y la Piedra Filosofal",
+    "author": "JW Rowling",
+    "publisher": "Salamandra",
+    "year": "1998"
+  },
+  {
+    "id": "eceb4b05-99ec-4cc8-a3ef-801f7d07e0df",
+    "title": "Mi planta de naranja lima",
+    "author": "José Mauro de Vasconcelos",
+    "publisher": "El Ateneo",
+    "year": "1968"
+  }
+]
