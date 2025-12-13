@@ -9,6 +9,7 @@ const { v4: uuid } = require("uuid")
 //Definimos la ruta del archivo 'json' que esta en el mismo directorio que este script
 const dataPath = path.join(__dirname, '../data/publishers.json')
 
+// Creamos el objeto que va a permitir obtener las editoriales desde el archivo JSON y tambien agregar nuevas editoriales.
 const PublisherModel = {
 
     getPublishers(){

@@ -9,14 +9,12 @@ const { v4: uuid } = require("uuid")
 //Definimos la ruta del archivo 'authors.json' que esta en el mismo directorio que este script
 const dataPath = path.join(__dirname, '../data/authors.json')
 
+// Creamos el objeto que va a permitir obtener los autores desde un archivo JSON y agregar autores.
 const AuthorModel = {
 
     getAllAuthors() {
         return JSON.parse(fs.readFileSync(dataPath, "utf8"))
     },
-
-     getByName: (name) =>
-        authors.filter(a => a.name.toLowerCase().includes(name.toLowerCase())),
 
     addAuthor(newAuthor) {
         const authors = AuthorModel.getAllAuthors()

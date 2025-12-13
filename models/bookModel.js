@@ -9,6 +9,7 @@ const { v4: uuid } = require("uuid")
 //Definimos la ruta del archivo 'books.json' que esta en el mismo directorio que este script
 const dataPath = path.join(__dirname, '../data/books.json')
 
+// Creamos el objeto que va a permitir obtener los libros desde el archivo JSON y tambien agregar libros nuevos.
 const BookModel = {
    
     getAllBooks() {
