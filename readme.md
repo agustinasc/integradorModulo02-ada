@@ -17,6 +17,7 @@ El servidor procesa comandos enviados por un cliente TCP y responde con resultad
 
 ## Arquitectura del proyecto
 
+```text
 book-api/
 │
 ├── controllers/         # Lógica de negocio
@@ -42,6 +43,7 @@ book-api/
 ├── client.js            # Cliente TCP
 ├── server.js            # Servidor TCP
 └── package.json
+```
 
 ## Tecnologias Utilizadas
 
@@ -84,18 +86,26 @@ Comando enviado:
 `GET BOOKS`
 
 Respuesta esperada:
-`Listado de libros:
+```text
+Listado de libros:
 - [1] El Principito – Antoine de Saint-Exupéry
-- [2] Cien años de soledad – Gabriel García Márquez`
+- [2] Cien años de soledad – Gabriel García Márquez
+```
 
 2) Agregar un autor
 Comando enviado:
-`ADD AUTHOR` 
-`nombre="Jorge Luis Borges"`
-`nacionalidad=Argentina`
+
+```text
+ADD AUTHOR
+nombre="Jorge Luis Borges"
+nacionalidad=Argentina
+```
 
 Respuesta esperada:
-`Autor agregado correctamente:`
-`id: 9f8a2c3e`
-`Nombre: Jorge Luis Borges`
-`Nacionalidad: Argentina`
+
+```text
+Autor agregado correctamente:
+id: 9f8a2c3e
+Nombre: Jorge Luis Borges
+Nacionalidad: Argentina
+```
