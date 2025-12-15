@@ -14,6 +14,11 @@ La aplicación sigue el patrón MVC e incluye una estructura modular que permite
 Los datos persisten en archivos JSON locales dentro de la carpeta book-api/.
 El servidor procesa comandos enviados por un cliente TCP y responde con resultados formateados vía views.
 
+## Objetivos
+- Implementar un servidor TCP utilizando el módulo `net` de Node.js.
+- Aplicar el patrón de arquitectura **MVC**.
+- Gestionar datos persistentes mediante archivos JSON.
+- Practicar modularización y organización de código en Node.js.
 
 ## Arquitectura del proyecto
 
@@ -45,6 +50,22 @@ book-api/
 └── package.json
 ```
 
+## Flujo de funcionamiento
+
+```text
+Cliente TCP
+   ↓
+Servidor TCP (server.js)
+   ↓
+Controller correspondiente
+   ↓
+Model (lectura/escritura JSON)
+   ↓
+View (formato de respuesta)
+   ↓
+Cliente TCP
+```
+
 ## Tecnologias Utilizadas
 
 - Node.js
@@ -65,14 +86,20 @@ Los modelos utilizan operaciones sincronicas para simplificar la logica.
 
 ## Instalación de dependencias y Ejecución 
 
-1) Instalar dependencias
+1) Clonar el repositorio
+```text
+git clone https://github.com/agustinasc/integradorModulo02-ada.git
+cd integradorModulo02-ada
+```
+
+2) Instalar dependencias
 `npm install`
 
-2) Iniciar el servidor
+3) Iniciar el servidor
 `node server.js`
 El servidor quedará escuchando conexiones entrantes en el puerto configurado.
 
-3) Iniciar el cliente
+4) Iniciar el cliente
 `node client.js`
 Desde el cliente se envían comandos al servidor, que procesa las solicitudes y devuelve las respuestas correspondientes.
 
@@ -109,3 +136,7 @@ id: 9f8a2c3e
 Nombre: Jorge Luis Borges
 Nacionalidad: Argentina
 ```
+
+## Autora
+
+Desarrollado por AgustinaSC 
